@@ -39,6 +39,7 @@ pipeline {
             }
         }
         stage('DeployToProduction') {
+            // kube server IP and credentials comes from cat .kube/config on Master cube node and goes to kube plugin credentials in jenkins
             when {
                 branch 'master'
             }
