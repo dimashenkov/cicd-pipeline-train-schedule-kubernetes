@@ -50,6 +50,7 @@ pipeline {
                     kubeconfigId: 'kubeconfig',
                     configs: 'train-schedule-kube.yaml',
                     enableConfigSubstitution: true
+                    // Substitution in train-schedule-kube.yaml DOCKER_IMAGE_NAME optin make it posible
                 )
             }
         }
